@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-page">
+        <header>
+            <div class="logo">
+                <a href="">mamondots</a>
+            </div>
+            <div class="menu">
+                <ul>
+                   <li><a href="">Services</a></li>
+                   <li><a href="">Pricing</a></li>
+                   <li><a href="">Portfolio</a></li>
+                   <li><a href="">Contact us</a></li>
+                   <li><a href="">About us</a></li>
+                </ul>
+            </div>
+            <div class="header-btn">
+                <button class="h-btn">Register / Login</button>
+            </div>
+        </header>
+        <main>
+             <div class="home-info">
+                 <h1 class="title">
+                    Designed for a more <br>interesting world
+                 </h1>
+                 <p class="text">
+                    Accounting Practice Management Software Accounting Practice <br>
+                    Management Software
+                 </p>
+                 <div class="btn">
+                     <button id="opne-btn" class="home-btn">Get Started</button>
+                 </div>
+                 <div class="img-boxes">
+                    <div class="img-box img-box01">
+                        <img src="img/home.png">
+                        <div class="img-btn">
+                            <button class="imgBtn">review item</button>
+                       </div>
+                    </div>
+                    <div class="img-box img-box02">
+                        <img src="img/horse.png">
+                        <div class="img-btn">
+                            <button class="imgBtn">review item</button>
+                       </div>
+                    </div>
+                    <div class="img-box img-box02">
+                        <img src="img/cow.png">
+                        <div class="img-btn">
+                             <button class="imgBtn">review item</button>
+                        </div>
+                    </div>
+                    <div class="img-box img-box04">
+                        <img src="img/chiken.png">
+                        <div class="img-btn">
+                            <button class="imgBtn">review item</button>
+                       </div>
+                    </div>
+                </div>
+             </div>
+             
+        </main>
+        <div id="body-popup" class="popup-body">
+              <video controls muted src="video/eduction.mp4"></video>
+              <div id="btn-colse" class="colse-btn">
+                <i class="fa-solid fa-x"></i>
+              </div>
+        </div>
+        
+    </div>
+    <script src="concept.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+          let animation = anime({
+       targets: '.logo',
+       translateX:[-40,0],
+       opacity:[0,1],
+       duration: 1500,
+       easing: 'easeInOutExpo',
+       }); 
+
+       anime({
+       targets: '.menu',
+       translateY:[-40,0],
+       opacity:[0,1],
+       duration: 1500,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.header-btn',
+       translateX:[40,0],
+       opacity:[0,1],
+       duration: 1500,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.title',
+       translateX:[60,0],
+       opacity:[0,1],
+       duration: 1800,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.text',
+       translateX:[-60,0],
+       opacity:[0,1],
+       duration: 1800,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.btn',
+       translateX:[60,0],
+       opacity:[0,1],
+       duration: 1800,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.img-box01',
+       translateX:[-60,0],
+       opacity:[0,1],
+       duration: 2300,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.img-box04',
+       translateX:[60,0],
+       opacity:[0,1],
+       duration: 2300,
+       easing: 'easeInOutExpo',
+       });
+
+       anime({
+       targets: '.img-box02',
+       translateY:[60,0],
+       opacity:[0,1],
+       duration: 2300,
+       easing: 'easeInOutExpo',
+       });
+
+
+    </script>
+</body>
+</html>
